@@ -75,6 +75,16 @@
       box-shadow: 1px 1px 1px 0px black;
       margin-left: -5px;
       align-self: center;
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease-out;
+    }
+    .viewing-progress:hover .dot {
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in;
     }
   </style>
 </head>
