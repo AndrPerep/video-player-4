@@ -1,0 +1,82 @@
+.player {
+  width: 800px;
+  height: 600px;
+  box-shadow: 5px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+}
+.player .player-button {
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1;
+  margin: 5px 5px 5px 5px;
+}
+.player .player-button:focus {
+}
+.player .video-container {
+  flex-grow: 1;
+}
+.player .player-button-section {
+  background-color: black;
+  display: flex;
+  padding: 5px 0 5px 0;
+  align-items: center
+}
+.player .player-buttons-indent {
+  flex-grow: 1;
+}
+.player .viewing-time {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.player .viewing-panel {
+  display: flex;
+  padding: 5px 0 5px 0;
+  background-color: black;
+  flex-grow: 1;
+}
+.player .viewing-progress {
+  flex-grow: 1;
+  margin: 0 5px 0 5px;
+  display: flex
+}
+.viewing-progress .duration {
+  background-color: grey;
+  height: 5px;
+  border-radius: 3px;
+  align-self: center;
+  flex-grow: 1;
+  display: flex;
+}
+.viewing-progress .slider {
+  background-color: red;
+  height: 5px;
+  border-radius: 3px;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 1px 1px 1px 0px black;
+  margin-left: -5px;
+  align-self: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+.viewing-progress:hover .dot {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
